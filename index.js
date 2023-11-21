@@ -7,7 +7,7 @@ function validateDateOfBirth() {
     var maxDate = new Date(currentDate.getFullYear() - 18, currentDate.getMonth(), currentDate.getDate());
 
     if (dobValue < minDate || dobValue > maxDate) {
-        alert("Date of birth must be between 18 and 55 years.");
+        alert("Date of birth must be between 18 and 55 years."); 
         dobInput.value = ""; // Clear the invalid date
     } else {
         alert("Thank you for providing a valid date of birth.");
